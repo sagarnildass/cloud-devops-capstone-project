@@ -4,7 +4,7 @@ pipeline {
          stage('Build') {
               steps {
                   sh 'echo Building...'
-                  slackSend "Build Started - ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
+                  slackSend message "Build Started - ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
               }
          }
          stage('Lint Dockerfile') {
