@@ -19,3 +19,5 @@ Manual
 9. Check the LoadBalancer Ingress address and the port no. So the final app address will be LoadBalancer Ingress address:9080
 
 10. Now create a jenkins file and run the first run
+
+11. Added slack support and build trigger on push
