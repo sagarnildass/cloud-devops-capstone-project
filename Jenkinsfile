@@ -1,7 +1,7 @@
 pipeline {
      agent any
      stages {
-         stage('Build') {
+         stage('Build and send initial slack message') {
               steps {
                   sh 'echo Building...'
                   slackSend message: "Build Started - ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
@@ -63,6 +63,7 @@ pipeline {
                   echo 'Checking if app is up...'
                   withAWS(credentials: 'aws-static', region: 'ap-south-1') {
                      sh "curl ad0e6a88870a9477989eb79393197b59-2120449898.ap-south-1.elb.amazonaws.com:9080"
+                     slackSend(message: "The app is up at: ad0e6a88870a9477989eb79393197b59-2120449898.ap-south-1.elb.amazonaws.com:9080", sendAsText: true)
                   }
                }
         }
