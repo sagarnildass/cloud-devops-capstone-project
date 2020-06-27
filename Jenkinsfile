@@ -60,6 +60,14 @@ pipeline {
                   }
                }
         }
+        stage('Checking rollout') {
+              steps{
+                  echo 'Checking rollout...'
+                  withAWS(credentials: 'aws-static', region: 'ap-south-1') {
+                     sh "kubectl rollout status deployments/capstone-app-sagarnil"
+                  }
+              }
+        }
         stage("Cleaning up") {
               steps{
                     echo 'Cleaning up...'

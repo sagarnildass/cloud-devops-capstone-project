@@ -17,3 +17,5 @@ Manual
 8. kubectl describe services/capstone-app-sagarnil
 
 9. Check the LoadBalancer Ingress address and the port no. So the final app address will be LoadBalancer Ingress address:9080
+
+10. Now create a jenkins file and run the first run
