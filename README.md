@@ -76,7 +76,4 @@ Steps:
 ![Route 53 app page](screenshots/14_route_53_mapping.png)
 
 
-   
-   
-   
-   
+And VOILA! We have a web app running on distributed kubernetes cluster in a dockerized manner at a custom web address!
