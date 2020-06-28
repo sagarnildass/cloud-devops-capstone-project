@@ -1,4 +1,4 @@
-# Project: Capstone
+# Project: Capstone (Udacity Cloud DevOps Nanodegree)
 
 In this project we will apply the skills and knowledge which were developed throughout the Cloud DevOps Nanodegree program. These include:
 
