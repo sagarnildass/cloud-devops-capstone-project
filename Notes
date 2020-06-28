@@ -21,3 +21,5 @@ Manual
 10. Now create a jenkins file and run the first run
 
 11. Added slack support and build trigger on push
+
+12. Mapped route 53 to loadbalancer DNS.
