@@ -11,6 +11,8 @@ In this project we will apply the skills and knowledge which were developed thro
 
 We will develop a CI/CD pipeline for micro services applications with rolling deployment. We will take a nodeJS app and dockerize it. Finally we will deploy this in a kubernetes cluster with 3 worker nodes and 1 node balancing instance in AWS. We will use jenkins for the CI/CD. We will also develop your Continuous Integration steps like linting and security scanning for vulnerability and errors in containers. We will also integrate slack with Jenkins to send us notifications at different stages of the pipeline. Finally as post deployment steps, we will perform additional testing by Jenkins whether the app is up and running, check whether it got successfully rolled out and also clean up the docker environment.
 
+The app which we will deploy is the Bcrypt app (https://github.com/felladrin/bcrypt-sandbox) used for encryption and decryption. This is written with nodeJS.
+
 Steps:
 
 1. Setting up the Jenkins instance - I have used my local ubuntu machine as the Jenkins instance. I also have added additional plugins in it like blue ocean, aqua microscanner, aws pipeline etc. We also have installed the slack integration plugin and set up global variables with a specific workspace to send automated message at different stages of the pipeline.
