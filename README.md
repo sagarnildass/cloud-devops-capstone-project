@@ -11,7 +11,7 @@ In this project we will apply the skills and knowledge which were developed thro
 
 We will develop a CI/CD pipeline for micro services applications with rolling deployment. We will take a nodeJS app and dockerize it. Finally we will deploy this in a kubernetes cluster with 3 worker nodes and 1 node balancing instance in AWS. We will use jenkins for the CI/CD. We will also develop your Continuous Integration steps like linting and security scanning for vulnerability and errors in containers. We will also integrate slack with Jenkins to send us notifications at different stages of the pipeline. Finally as post deployment steps, we will perform additional testing by Jenkins whether the app is up and running, check whether it got successfully rolled out and also clean up the docker environment.
 
-# Additional things done in addition to the project rubric
+# Extra things done in addition to the project rubric
 
 So apart from the basic requirements for this project, the additional steps that we will be doing are as follows:
 
